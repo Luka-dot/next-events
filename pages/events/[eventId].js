@@ -5,7 +5,7 @@ const EventsDetailPage = () => {
     const router = useRouter()
     return (
         <div>
-            <h2>This is detail page for Event: {router.query.id}</h2>
+            <h2>This is detail page for Event: {router.query.eventId}</h2>
         </div>
     )
 }
