@@ -7,7 +7,7 @@ const LandingPage = () => {
 
     return (
         <div>
-           
+          
             <div>
                 <FeaturedEventsList featuredEvents={featuredEvents} />
             </div>

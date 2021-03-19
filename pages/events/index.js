@@ -1,11 +1,15 @@
 import React from 'react'
-import renderData from '../../dummy-data'
+import { getAllEvents } from '../../dummy-data'
+import FeaturedEventList from '../../components/events/FeaturedEventsList'
+import EventsSearch from '../../components/events/events-search'
 
 const EventsPage = () => {
+    const events = getAllEvents()
+
     return (
         <div>
-            <h2>This is Events Page</h2>
-           
+        <EventsSearch />
+            <FeaturedEventList featuredEvents={events} />
         </div>
     )
 }
